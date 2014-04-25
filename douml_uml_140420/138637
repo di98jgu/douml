@@ -1,0 +1,1002 @@
+format 75
+"tool" // douml::src::tool
+  revision 5
+  modified_by 13 "work"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  classview 142221 "classes"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 129165 "ToolCom.h"
+      abstract visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 151053 // (<generalisation>)
+	relation 151053 ---|> name "<generalisation>"
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 151053 // (<generalisation>)
+	  b parent class_ref 138381 // QObject
+      end
+
+      attribute 128013 "used"
+	class_attribute protected explicit_type "ToolCom"
+	multiplicity "*"
+	stereotype "Q3PtrList"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${stereotype}<${type}> ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 128141 "unused"
+	class_attribute protected explicit_type "ToolCom"
+	multiplicity "*"
+	stereotype "Q3PtrList"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${stereotype}<${type}> ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 128269 "exitvalue"
+	class_attribute protected explicit_type "int"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 128397 "start"
+	protected explicit_type "bool"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 128525 "exitStaged"
+	protected explicit_type "bool"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 128653 "exit_bouml"
+	protected explicit_type "bool"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 128781 "target"
+	protected explicit_type "BrowserNode *"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129037 "listen_sock"
+	protected explicit_type "Socket *"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129165 "sock"
+	protected explicit_type "Socket *"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129293 "timer"
+	protected explicit_type "QTimer *"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129421 "cmd"
+	protected explicit_type "char *"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129549 "api_version"
+	protected explicit_type "unsigned"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129677 "id"
+	protected explicit_type "int"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129805 "wanted"
+	protected explicit_type "unsigned"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 129933 "already_read"
+	protected explicit_type "int"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130061 "buffer_in"
+	protected explicit_type "char *"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130189 "buffer_in_size"
+	protected explicit_type "unsigned"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130317 "buffer_out"
+	protected explicit_type "char *"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130445 "p_buffer_out"
+	protected explicit_type "char *"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130573 "buffer_out_size"
+	protected explicit_type "unsigned"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130701 "externalProcess"
+	protected explicit_type "QProcess *"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 128013 "ToolCom"
+	preserve_cpp_body_indent protected explicit_return_type ""
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 128269 "DisconnectExternalProcess"
+	preserve_cpp_body_indent protected explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 128653 "check_size_out"
+	preserve_cpp_body_indent protected explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 128909 "read_buffer"
+	preserve_cpp_body_indent protected explicit_return_type "const char *"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 129165 "bind"
+	preserve_cpp_body_indent protected explicit_return_type "unsigned"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 129421 "close"
+	preserve_cpp_body_indent protected explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 129805 "is_running"
+	class_operation preserve_cpp_body_indent protected explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 130061 "(*cont)"
+	preserve_cpp_body_indent protected explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 130445 "data_received"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 130701 "~ToolCom"
+	abstract preserve_cpp_body_indent cpp_virtual public explicit_return_type ""
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 130957 "run"
+	class_operation preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 131213 "exit_value"
+	preserve_cpp_body_indent friend public explicit_return_type "int"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 131469 "api_format"
+	preserve_cpp_body_indent const public explicit_return_type "unsigned"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 131725 "get_unsigned"
+	preserve_cpp_body_indent public explicit_return_type "unsigned"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 131981 "get_bool"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 132237 "get_id"
+	preserve_cpp_body_indent public explicit_return_type "void *"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 132493 "get_kind"
+	preserve_cpp_body_indent public explicit_return_type "UmlCode"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 132749 "get_string"
+	preserve_cpp_body_indent public explicit_return_type "const char *"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 133005 "get_relation_kind"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 133261 "get_visibility"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 133517 "get_extended_visibility"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 133773 "get_direction"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 134029 "get_type"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 134285 "skip_type"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 134541 "write_unsigned"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 134797 "write_bool"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 135053 "write_id"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 135309 "write_string"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 135565 "write_char"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 135821 "write"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 136077 "write_ack"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 136333 "fatal_error"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      classrelation 157581 // (<dependency>)
+	relation 157581 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 157581 // (<dependency>)
+	  b parent class_ref 145421 // QProcess
+      end
+
+      classrelation 157837 // (<dependency>)
+	relation 157837 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 157837 // (<dependency>)
+	  b parent class_ref 145293 // QCoreApplication
+      end
+
+      classrelation 157965 // (<dependency>)
+	relation 157965 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 157965 // (<dependency>)
+	  b parent class_ref 131725 // QSettings
+      end
+
+      classrelation 158221 // (<dependency>)
+	relation 158221 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 158221 // (<dependency>)
+	  b parent class_ref 145165 // errno.h
+      end
+
+      classrelation 158349 // (<dependency>)
+	relation 158349 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 158349 // (<dependency>)
+	  b parent class_ref 144909 // Socket.h
+      end
+
+      classrelation 158477 // (<dependency>)
+	relation 158477 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 158477 // (<dependency>)
+	  b parent class_ref 145037 // iostream
+      end
+
+      classrelation 158605 // (<dependency>)
+	relation 158605 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 158605 // (<dependency>)
+	  b parent class_ref 146061 // AType.h
+      end
+
+      classrelation 158733 // (<dependency>)
+	relation 158733 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 158733 // (<dependency>)
+	  b parent class_ref 145677 // ApiCmd.h
+      end
+
+      classrelation 158861 // (<dependency>)
+	relation 158861 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 158861 // (<dependency>)
+	  b parent class_ref 130317 // QsLog.h
+      end
+
+      classrelation 158989 // (<dependency>)
+	relation 158989 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 158989 // (<dependency>)
+	  b parent class_ref 129293 // BrowserView.h
+      end
+
+      classrelation 159117 // (<dependency>)
+	relation 159117 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 159117 // (<dependency>)
+	  b parent class_ref 128525 // UmlWindow.h
+      end
+
+      classrelation 159245 // (<dependency>)
+	relation 159245 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 159245 // (<dependency>)
+	  b parent class_ref 145805 // GenerationSettings.h
+      end
+
+      classrelation 159373 // (<dependency>)
+	relation 159373 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 159373 // (<dependency>)
+	  b parent class_ref 129933 // err.h
+      end
+
+      classrelation 159501 // (<dependency>)
+	relation 159501 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 159501 // (<dependency>)
+	  b parent class_ref 129805 // mu.h
+      end
+
+      classrelation 159629 // (<dependency>)
+	relation 159629 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 159629 // (<dependency>)
+	  b parent class_ref 129677 // DialogUtil.h
+      end
+
+      classrelation 159757 // (<dependency>)
+	relation 159757 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 159757 // (<dependency>)
+	  b parent class_ref 145933 // TraceDialog.h
+      end
+
+      classrelation 159885 // (<dependency>)
+	relation 159885 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 159885 // (<dependency>)
+	  b parent class_ref 146445 // BrowserOperation.h
+      end
+
+      classrelation 160013 // (<dependency>)
+	relation 160013 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 160013 // (<dependency>)
+	  b parent class_ref 129421 // BrowserPackage.h
+      end
+
+      classrelation 160141 // (<dependency>)
+	relation 160141 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 160141 // (<dependency>)
+	  b parent class_ref 146317 // BrowserClass.h
+      end
+
+      classrelation 160269 // (<dependency>)
+	relation 160269 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 160269 // (<dependency>)
+	  b parent class_ref 146189 // BrowserNode.h
+      end
+
+      operation 142861 "close_all"
+	class_operation preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 143117 "closed"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 143373 "connexion_timeout"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 143629 "processFinished"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      classrelation 166797 // (<dependency>)
+	relation 166797 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 166797 // (<dependency>)
+	  b parent class_ref 153101 // QList
+      end
+
+      classrelation 166925 // (<dependency>)
+	relation 166925 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 166925 // (<dependency>)
+	  b parent class_ref 145549 // QTimer
+      end
+    end
+
+    classdiagram 134669 "ToolCom_view"
+      draw_all_relations no hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility yes show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      class_color lightyellow package_color verylightgray 
+      size A3-Landscape
+    end
+  end
+end

@@ -1,0 +1,29 @@
+window_sizes 1818 1058 553 1259 932 0
+show_stereotypes
+selected classdiagram_ref 128013 // main_include
+open
+  classview_ref 128013 // classes
+  
+package_ref 135053 // bin 
+  
+package_ref 135309 // browserfunctions 
+  
+package_ref 135565 // CppRevers
+  
+package_ref 135821 // CustomWidgets
+  
+package_ref 137997 // ProjectControl
+  classview_ref 142221 // classes
+  
+package_ref 139021 // UML
+  
+package_ref 143245 // sort
+  
+package_ref 143629 // xmi
+  
+package_ref 143757 // xmi2
+  
+package_ref 134925 // bin
+  classview_ref 128909 // classes
+end
+end

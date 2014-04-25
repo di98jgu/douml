@@ -1,0 +1,357 @@
+format 75
+"src" // douml::src
+  revision 5
+  modified_by 13 "work"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  classview 128013 "classes"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    classdiagram 128013 "main_include"
+      draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A3-Landscape
+    end
+
+    class 128013 "main.cpp"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128013 // (<dependency>)
+	relation 128013 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 128013 // (<dependency>)
+	  b parent class_ref 131341 // TypeIdentifier.h
+      end
+
+      classrelation 128141 // (<dependency>)
+	relation 128141 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 128141 // (<dependency>)
+	  b parent class_ref 128397 // mystr.h
+      end
+
+      classrelation 128269 // (<dependency>)
+	relation 128269 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 128269 // (<dependency>)
+	  b parent class_ref 131213 // constructorinitializerdialog.h
+      end
+
+      classrelation 128397 // (<dependency>)
+	relation 128397 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 128397 // (<dependency>)
+	  b parent class_ref 130829 // ClassDialog.h
+      end
+
+      classrelation 128525 // (<dependency>)
+	relation 128525 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 128525 // (<dependency>)
+	  b parent class_ref 130957 // ArtifactDialog.h
+      end
+
+      classrelation 128653 // (<dependency>)
+	relation 128653 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 128653 // (<dependency>)
+	  b parent class_ref 131085 // OperationDialog.h
+      end
+
+      classrelation 128781 // (<dependency>)
+	relation 128781 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 128781 // (<dependency>)
+	  b parent class_ref 130445 // EdgeMenuFactory.h
+      end
+
+      classrelation 129037 // (<dependency>)
+	relation 129037 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 129037 // (<dependency>)
+	  b parent class_ref 130701 // EdgeToolBarCreation.h
+      end
+
+      classrelation 129165 // (<dependency>)
+	relation 129165 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 129165 // (<dependency>)
+	  b parent class_ref 130317 // QsLog.h
+      end
+
+      classrelation 129421 // (<dependency>)
+	relation 129421 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 129421 // (<dependency>)
+	  b parent class_ref 131853 // settings_ini.h
+      end
+
+      classrelation 135949 // (<dependency>)
+	relation 135949 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 135949 // (<dependency>)
+	  b parent class_ref 129933 // err.h
+      end
+
+      classrelation 136077 // (<dependency>)
+	relation 136077 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 136077 // (<dependency>)
+	  b parent class_ref 129805 // mu.h
+      end
+
+      classrelation 136205 // (<dependency>)
+	relation 136205 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 136205 // (<dependency>)
+	  b parent class_ref 129549 // Shortcut.h
+      end
+
+      classrelation 136333 // (<dependency>)
+	relation 136333 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 136333 // (<dependency>)
+	  b parent class_ref 128909 // UmlGlobal.h
+      end
+
+      classrelation 136461 // (<dependency>)
+	relation 136461 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 136461 // (<dependency>)
+	  b parent class_ref 131469 // translate.h
+      end
+
+      classrelation 136589 // (<dependency>)
+	relation 136589 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 136589 // (<dependency>)
+	  b parent class_ref 129421 // BrowserPackage.h
+      end
+
+      classrelation 143117 // (<dependency>)
+	relation 143117 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 143117 // (<dependency>)
+	  b parent class_ref 129677 // DialogUtil.h
+      end
+
+      classrelation 143245 // (<dependency>)
+	relation 143245 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 143245 // (<dependency>)
+	  b parent class_ref 130061 // EnvDialog.h
+      end
+
+      classrelation 143501 // (<dependency>)
+	relation 143501 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 143501 // (<dependency>)
+	  b parent class_ref 129037 // UmlDesktop.h
+      end
+
+      classrelation 143629 // (<dependency>)
+	relation 143629 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 143629 // (<dependency>)
+	  b parent class_ref 128525 // UmlWindow.h
+      end
+
+      classrelation 143757 // (<dependency>)
+	relation 143757 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 143757 // (<dependency>)
+	  b parent class_ref 130573 // DialogConnections.h
+      end
+
+      classrelation 143885 // (<dependency>)
+	relation 143885 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 143885 // (<dependency>)
+	  b parent class_ref 128653 // qapplication.h
+      end
+
+      classrelation 144013 // (<dependency>)
+	relation 144013 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 144013 // (<dependency>)
+	  b parent class_ref 131725 // QSettings
+      end
+
+      classrelation 144141 // (<dependency>)
+	relation 144141 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 144141 // (<dependency>)
+	  b parent class_ref 131597 // QTextCodec
+      end
+
+      classrelation 144269 // (<dependency>)
+	relation 144269 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 144269 // (<dependency>)
+	  b parent class_ref 130189 // QsLogDest.h
+      end
+
+      classrelation 144397 // (<dependency>)
+	relation 144397 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 144397 // (<dependency>)
+	  b parent class_ref 129165 // ToolCom.h
+      end
+
+      classrelation 144525 // (<dependency>)
+	relation 144525 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 144525 // (<dependency>)
+	  b parent class_ref 128781 // UmlPixmap.h
+      end
+    end
+
+    class 131853 "settings_ini.h"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+  end
+
+  package_ref 135053 // bin 
+
+  package_ref 135181 // browser 
+
+  package_ref 135309 // browserfunctions 
+
+  package_ref 135437 // CppGenerator
+
+  package_ref 135565 // CppRevers
+
+  package_ref 135693 // CppRoundtrip
+
+  package_ref 135821 // CustomWidgets
+
+  package_ref 135949 // data
+
+  package_ref 136077 // diagram
+
+  package_ref 136205 // dialog
+
+  package_ref 136333 // Factories
+
+  package_ref 136461 // icons
+
+  package_ref 136589 // IdlGenerator
+
+  package_ref 136717 // JavaCat
+
+  package_ref 136845 // JavaGenerator
+
+  package_ref 136973 // JavaReverse
+
+  package_ref 137101 // JavaRoundtrip
+
+  package_ref 137229 // Libs
+
+  package_ref 137357 // Logging
+
+  package_ref 137485 // misc
+
+  package_ref 137613 // PhpGenerator
+
+  package_ref 137869 // PlugOutUpgrade
+
+  package_ref 137997 // ProjectControl
+
+  package_ref 138125 // ProjectSynchro
+
+  package_ref 138253 // PythonGenerator
+
+  package_ref 138381 // RoundtripBody
+
+  package_ref 138509 // tagmanagement
+
+  package_ref 138637 // tool
+
+  package_ref 138765 // Tools
+
+  package_ref 138893 // ui
+
+  package_ref 139021 // UML
+
+  package_ref 139149 // xpm
+end
