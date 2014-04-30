@@ -37,7 +37,7 @@ Objective
  The code of DoUML is of reasonable size and uses QT 4 and thus is an excellent 
  starting point.
  
- #### The quest ####
+#### The quest ####
  * What does what, most of the classes lack documentation.
  * Document code and maybe do some cleaning.
  * To learn all about QT or at least learn how to use it. Obviously very 
@@ -53,7 +53,7 @@ Documentation
 All diagrams and project files are available. This project is new,
 not much to show yet.
 
- ### Files ###
+### Files ###
  * UML - Current place of all UML diagrams
  * douml - Source code
  * douml_uml_140420 - UML project files
@@ -62,13 +62,26 @@ Project status
 --------------
 
  - (2014-04-25) Forked DoUML and added the first diagrams.
+ - (2014-04-30) UML of BrowserPackage in folder browser. UML modeling is 
+ divided into various diagrams, views and drawing units. A drawing unit 
+ can be a class for instance. In DoUML the diagrams, views and drawing 
+ units is represented by browser classes, for exampel there is a 
+ BrowserClassDiagram, BrowserClassView and a BrowserClass. The 
+ BrowserPackage is the manager for all units in the current project.
+ In the GUI the browser units is found to the left in a treelike 
+ structure.
 
+Contact
+-------
+
+You may contact me at   
+di98jgu at gmail dot com
 
 	
 Official home of DoUML
 ----------------------
 
-  http://sourceforge.net/projects/douml/
+  http://sourceforge.net/projects/douml/   
   https://github.com/DoUML/douml/
 
 Contact the DoUML team

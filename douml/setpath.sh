@@ -33,5 +33,5 @@
 # If you close the shell and open another your PATH will again be the default
 # for your login - you will have to run this script again.
 
-PATH='./'$( find ./genplugouts/ ./src/ -type d -printf ":%p" )':'$PATH
+PATH='./'$( find ./bin ./genplugouts/ ./src/ -type d -printf ":%p" )':'$PATH
 

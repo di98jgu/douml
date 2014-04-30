@@ -66,6 +66,7 @@ protected:
     DeploymentDiagramSettings deploymentdiagram_settings;
     StateDiagramSettings statediagram_settings;
     ActivityDiagramSettings activitydiagram_settings;
+    
     UmlColor class_color;
     UmlColor package_color;
     UmlColor note_color;
@@ -84,6 +85,7 @@ protected:
     UmlColor activitypartition_color;
     UmlColor activityaction_color;
     UmlColor parameterpin_color;
+    
     bool is_imported;
     unsigned revision;
     int owner;
