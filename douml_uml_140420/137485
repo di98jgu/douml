@@ -1,6 +1,6 @@
 format 75
 "misc" // douml::src::misc
-  revision 4
+  revision 7
   modified_by 13 "work"
   // class settings
   //class diagram settings
@@ -166,6 +166,22 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
+      class 182669 "IdDict"
+	visibility package 
+	nformals 1
+	formal name "X" type "class" explicit_default_value ""
+	  explicit_extends ""
+	cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+      end
     end
 
     class 166541 "Settings"
@@ -439,7 +455,58 @@ ${items}};
 	explicit_switch_type ""
 	
       end
+
+      class 175757 "UmlCode"
+	visibility package stereotype "enum"
+	cpp_decl "${comment}enum ${name} {
+${items}
+};
+"
+	java_decl "${comment}${@}${visibility}${final}${abstract}enum ${name}${implements} {
+${items};
+${members}}
+"
+	php_decl "${comment}${visibility}final class ${name} {
+${items}}
+"
+	python_2_2 python_decl "class ${name}:
+${docstring}${members}
+"
+	idl_decl "${comment}enum ${name} {
+${items}};
+"
+	explicit_switch_type ""
+	
+      end
+
+      class 176013 "UmlVisibility"
+	visibility package stereotype "enum"
+	cpp_decl "${comment}enum ${name} {
+${items}
+};
+"
+	java_decl "${comment}${@}${visibility}${final}${abstract}enum ${name}${implements} {
+${items};
+${members}}
+"
+	php_decl "${comment}${visibility}final class ${name} {
+${items}}
+"
+	python_2_2 python_decl "class ${name}:
+${docstring}${members}
+"
+	idl_decl "${comment}enum ${name} {
+${items}};
+"
+	explicit_switch_type ""
+	
+	associated_diagram classdiagram_ref 141197 // BrowserPackage_view
+      end
+    end
+
+    classdiagram 147725 "misc_view"
+      draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A4
     end
   end
-
 end

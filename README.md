@@ -70,6 +70,20 @@ Project status
  BrowserPackage is the manager for all units in the current project.
  In the GUI the browser units is found to the left in a treelike 
  structure.
+ - (2014-05-02) UML diagram of _BrowserPackage_ done. 
+ - (2014-05-0) At this stage the exact purpose of _BrowserPackage_ is 
+ unclear since _BrowserNode_ and _BrowserPackage_ have a huge list of 
+ dependencies and methods. _BrowserPackage_ like every browser class 
+ inherit from _BrowserNode_. This makes sense, packages, diagrams, 
+ views and drawing units is all nodes in the browser tree. _Qt_ is a 
+ integrated part of the logic and is used everywhere, UML is a _Qt_ 
+ program and will stay like that. I have a theory that this is the 
+ default project root. Every project start from a default node, a root 
+ package. However there is also user defined packages. _BrowserPackage_ 
+ may serve a double purpose of being both a root package and a user 
+ defined package.
+ 
+ 
 
 Contact
 -------

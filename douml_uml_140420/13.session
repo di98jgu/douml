@@ -1,20 +1,21 @@
 window_sizes 1818 1058 553 1259 932 0
 diagrams
-  active  classdiagram_ref 141197 // BrowserPackage_view
-    1259 932 60 16 0 0
+  active  classdiagram_ref 147725 // misc_view
+    1259 932 100 4 0 0
 end
 show_stereotypes
-selected classdiagram_ref 141197 // BrowserPackage_view
+selected class_ref 176013 // UmlVisibility
 open
+  classview_ref 128013 // classes
   
   package_ref 135053 // bin 
-  classview_ref 141965 // classes
   
   package_ref 135309 // browserfunctions 
   
   package_ref 135565 // CppRevers
   
   package_ref 135821 // CustomWidgets
+  class_ref 168973 // UmlEnum
   
   package_ref 137997 // ProjectControl
   

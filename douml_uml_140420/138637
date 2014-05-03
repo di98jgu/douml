@@ -1,6 +1,6 @@
 format 75
 "tool" // douml::src::tool
-  revision 6
+  revision 7
   modified_by 13 "work"
   // class settings
   //class diagram settings
@@ -897,7 +897,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 160013 // (<dependency>)
-	  b parent class_ref 129421 // BrowserPackage.h
+	  b parent class_ref 129421 // BrowserPackage
       end
 
       classrelation 160141 // (<dependency>)
@@ -913,7 +913,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 160269 // (<dependency>)
-	  b parent class_ref 146189 // BrowserNode.h
+	  b parent class_ref 146189 // BrowserNode
       end
 
       operation 142861 "close_all"

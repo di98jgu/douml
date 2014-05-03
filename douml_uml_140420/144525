@@ -1,6 +1,6 @@
 format 75
 "qt4" // qt4
-  revision 6
+  revision 7
   modified_by 13 "work"
   // class settings
   //class diagram settings
@@ -296,6 +296,34 @@ ${inlines}
     end
 
     class 167565 "Q3Dict"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 175629 "QString"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 175885 "QStringList"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};

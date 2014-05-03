@@ -1,6 +1,6 @@
 format 75
 "src" // douml::src
-  revision 6
+  revision 7
   modified_by 13 "work"
   // class settings
   //class diagram settings
@@ -184,7 +184,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 136589 // (<dependency>)
-	  b parent class_ref 129421 // BrowserPackage.h
+	  b parent class_ref 129421 // BrowserPackage
       end
 
       classrelation 143117 // (<dependency>)
