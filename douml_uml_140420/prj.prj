@@ -1,6 +1,6 @@
 format 75
 "prj"
-  revision 6
+  revision 7
   modified_by 13 "work"
 
 
@@ -53,4 +53,6 @@ format 75
     package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
     draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
   end
+
+  package_ref 157837 // primitive types
 end

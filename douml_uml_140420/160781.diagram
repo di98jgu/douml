@@ -1,0 +1,59 @@
+format 75
+
+classcanvas 128013 class_ref 128397 // mystr
+  draw_all_relations default hide_attributes no hide_operations no hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name no package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyzwh 430 46 2005 293 683
+end
+classcanvas 128141 class_ref 175629 // QString
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 67 313 2000
+end
+classcanvas 128269 class_ref 219277 // Q3StrList
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 56 420 2000
+end
+classcanvas 128397 class_ref 219405 // Q3CString
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 59 368 2005
+end
+classcanvas 128525 class_ref 130317 // QsLog
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 69 136 2000
+end
+packagecanvas 128653 
+  package_ref 137357 // Logging
+    xyzwh 56 85 0 113 99
+end
+packagecanvas 128781 
+  package_ref 144525 // qt4
+    xyzwh 35 246 0 169 349
+end
+classcanvas 129037 class_ref 219533 // QByteArray
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 47 475 2005
+end
+classcanvas 129421 class_ref 219661 // QCharRef
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyz 59 532 2000
+end
+relationcanvas 128909 relation_ref 210701 // <unidirectional association>
+  from ref 128013 z 2006 to point 311 330
+  line 129805 z 2006 to ref 128141
+  role_a_pos 209 296 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129165 relation_ref 210829 // <unidirectional association>
+  from ref 128013 z 2006 to point 395 489
+  line 129933 z 2006 stereotype "<<list>>" xyz 292 495 3000 to ref 129037
+  role_a_pos 209 461 3000 no_role_b
+  multiplicity_a_pos 212 497 3000 no_multiplicity_b
+end
+simplerelationcanvas 129549 simplerelation_ref 149005
+  from ref 128013 z 2006 to point 383 131
+  line 130189 z 2006 to ref 128653
+end
+simplerelationcanvas 129677 simplerelation_ref 149133
+  from ref 128013 z 2006 to point 397 416
+  line 130061 z 2006 to ref 128781
+end
+end

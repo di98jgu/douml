@@ -71,7 +71,7 @@ Project status
  In the GUI the browser units is found to the left in a treelike 
  structure.
  - (2014-05-02) UML diagram of _BrowserPackage_ done. 
- - (2014-05-0) At this stage the exact purpose of _BrowserPackage_ is 
+ - (2014-05-03) At this stage the exact purpose of _BrowserPackage_ is 
  unclear since _BrowserNode_ and _BrowserPackage_ have a huge list of 
  dependencies and methods. _BrowserPackage_ like every browser class 
  inherit from _BrowserNode_. This makes sense, packages, diagrams, 
@@ -82,6 +82,25 @@ Project status
  package. However there is also user defined packages. _BrowserPackage_ 
  may serve a double purpose of being both a root package and a user 
  defined package.
+ - (2014-05-04) Work on myio. I have decided to mark every object or
+ primitive type allocated with *new* as a composition. In C++ this is
+ quite resonable since a *new* and *delete* form matching pairs within a 
+ class. At least this is the idea, according to Stroustrup. My consern
+ is and the reason I have desided to mark every *new* as a composition 
+ is myio. In myio *new* and *delete* do not break even. For instance a char 
+ array is created with new when a file is read. This array is returned
+ to the caller, no local copy is keept. We have a naked new without a
+ matching delete. In fact myio is just a collection of functions in global
+ scope. 
+ - (2014-05-05) Initialt work on assertions macros. Still much work to be 
+ done. However what is really is needed a lightweight way of tracking 
+ *new* and *delete*.
+ - (2014-05-05) Stackoverflow have confirmed memory leak in _myio_. Will 
+ make a long note on that later.
+ - (2014-05-10) The folder misc is to be mapped. This folder contains
+ classes that is used everywhere and thus is vital to understand.
+ - (2014-05-11) Two new diagrams have been added, _mystr_ and _myio_. 
+ More *new* statements is found in _Settings_. 
  
  
 
