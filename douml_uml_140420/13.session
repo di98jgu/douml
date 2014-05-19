@@ -1,10 +1,11 @@
-window_sizes 1818 1058 547 1265 932 0
+window_sizes 1818 1058 434 1378 932 0
 diagrams
-  active  classdiagram_ref 160781 // mystr
-    766 814 100 4 0 0
+  active  classdiagram_ref 180877 // misc_view
+    1378 932 100 17 0 0
 end
 show_stereotypes
-selected operation_ref 218765 // find
+selected 
+  package_ref 137357 // Logging
 open
   
   package_ref 135053 // bin 
@@ -14,8 +15,10 @@ open
   package_ref 135565 // CppRevers
   
   package_ref 135821 // CustomWidgets
-  classview_ref 128653 // classes
-  operation_ref 224397 // operator []
+  classdiagram_ref 160781 // mystr_view
+  classdiagram_ref 173965 // Labeld_view
+  classdiagram_ref 167309 // settings_view
+  classdiagram_ref 154253 // myio_view
   
   package_ref 137997 // ProjectControl
   
@@ -24,12 +27,10 @@ open
   package_ref 139149 // xpm
   
   package_ref 134925 // bin
-  classview_ref 128909 // classes
   
   package_ref 151053 // C_Library
   
   package_ref 151181 // sys
-  
-  package_ref 151309 // std
+  classview_ref 148877 // classes
 end
 end

@@ -1,6 +1,6 @@
 format 75
 "misc" // douml::src::misc
-  revision 13
+  revision 16
   modified_by 13 "work"
   // class settings
   //class diagram settings
@@ -42,7 +42,7 @@ format 75
     //activity diagram settings
     package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
     show_infonote default drawing_language default show_stereotype_properties default
-    class 131469 "translate.h"
+    class 129933 "err"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -56,7 +56,142 @@ ${inlines}
       
     end
 
-    class 129933 "err.h"
+    classdiagram 174093 "mu_view"
+      draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility yes show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A3-Landscape
+    end
+
+    class 129805 "mu"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 180749 "Uid"
+	class_attribute public explicit_type "int"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 180877 "RootPermission"
+	class_attribute public explicit_type "int"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 240269 "set_user_id"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 240525 "user_id"
+	preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 240781 "set_root_permission"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 241037 "root_permission"
+	preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 241293 "user_name"
+	preserve_cpp_body_indent public explicit_return_type "const char  *  [primitive types]"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      classrelation 225677 // (<dependency>)
+	relation 225421 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 225677 // (<dependency>)
+	  b parent class_ref 167309 // translate
+      end
+
+      classrelation 225933 // (<dependency>)
+	relation 225677 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 225933 // (<dependency>)
+	  b parent class_ref 166925 // myio
+      end
+
+      simplerelation 156173
+	-_->
+	  on 
+	  package_ref 136077 // diagram
+      end
+    end
+
+    class 129549 "Shortcut"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -70,7 +205,7 @@ ${inlines}
       
     end
 
-    class 129805 "mu.h"
+    class 128909 "UmlGlobal"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -84,32 +219,9 @@ ${inlines}
       
     end
 
-    class 129549 "Shortcut.h"
-      visibility package 
-      cpp_decl "${comment}${template}class ${name}${inherit} {
-${members}};
-${inlines}
-"
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    class 128909 "UmlGlobal.h"
-      visibility package 
-      cpp_decl "${comment}${template}class ${name}${inherit} {
-${members}};
-${inlines}
-"
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
+    classdiagram 160781 "mystr_view"
+      draw_all_relations no hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility yes show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position no show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A4
     end
 
     class 128397 "mystr"
@@ -747,7 +859,7 @@ ${inlines}
       end
     end
 
-    class 131341 "TypeIdentifier.h"
+    class 131341 "TypeIdentifier"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -761,18 +873,9 @@ ${inlines}
       
     end
 
-    class 145805 "GenerationSettings.h"
-      visibility package 
-      cpp_decl "${comment}${template}class ${name}${inherit} {
-${members}};
-${inlines}
-"
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      
+    classdiagram 173965 "Labeld_view"
+      draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility yes show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position no show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A3-Landscape
     end
 
     class 166413 "Labeled"
@@ -803,6 +906,358 @@ ${inlines}
 	explicit_switch_type ""
 	
       end
+
+      attribute 179725 "PROJECT_ID"
+	class_attribute const_attribute public explicit_type "int"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 179853 "FIRST_BASE_ID"
+	class_attribute const_attribute public explicit_type ""
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 179981 "FIRST_USER_ID"
+	class_attribute const_attribute public explicit_type ""
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 180109 "FIRST_ID"
+	class_attribute const_attribute public explicit_type "int"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 180237 "NeedRenumber"
+	class_attribute public explicit_type "bool"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 180365 "ImportLib"
+	class_attribute public explicit_type "bool"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 237709 "set_in_import"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 237965 "in_import"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 238221 "in_lib_import"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 238477 "place"
+	preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 238733 "new_place"
+	preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 238989 "will_change_id"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 239245 "do_change_shared_ids"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 239501 "memo_idmax_loc"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 239757 "idmax_add_margin"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 240013 "check_ids_cleared"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      class 234125 "IntList"
+	visibility public stereotype "struct"
+	cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	classrelation 225165 // next (<unidirectional association>)
+	  relation 224909 ---> name "<unidirectional association>"
+	    a role_name "next" public
+	      cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	      classrelation_ref 225165 // next (<unidirectional association>)
+	    b parent class_ref 234125 // IntList
+	end
+      end
+
+      class 234253 "NeedChange"
+	visibility package stereotype "struct"
+	cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl "${comment}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+	idl_decl "${comment}struct ${name} {
+${members}};
+"
+	explicit_switch_type ""
+	
+      end
+
+      class 234381 "Labeled"
+	visibility package 
+	nformals 1
+	formal name "X" type "class" explicit_default_value ""
+	  explicit_extends ""
+	cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+      end
+
+      class 234509 "IdIterator"
+	visibility public 
+	nformals 1
+	formal name "X" type "class" explicit_default_value ""
+	  explicit_extends ""
+	nactuals 1
+	actual class class_ref 234637 // Q3IntDictIterator
+	  rank 0 explicit_value ""
+	cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	classrelation 224525 // (<generalisation>)
+	  relation 224269 ---|> name "<generalisation>"
+	    a public
+	      cpp default "${type}"
+	      classrelation_ref 224525 // (<generalisation>)
+	    b parent class_ref 234637 // Q3IntDictIterator
+	end
+      end
+
+      classrelation 224781 // MustBeRenumered (<directional composition>)
+	relation 224525 *--> name "<directional composition>"
+	  stereotype "QList"
+	  a role_name "MustBeRenumered" multiplicity "*" class_relation public
+	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${stereotype}<${type} *> ${name}${value};
+"
+	    classrelation_ref 224781 // MustBeRenumered (<directional composition>)
+	  b parent class_ref 234253 // NeedChange
+      end
+
+      classrelation 224909 // FirstCell (<unidirectional association>)
+	relation 224653 ---> name "<unidirectional association>"
+	  a role_name "FirstCell" public
+	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 224909 // FirstCell (<unidirectional association>)
+	  b parent class_ref 234125 // IntList
+      end
+
+      classrelation 225293 // (<dependency>)
+	relation 225037 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 225293 // (<dependency>)
+	  b parent class_ref 166925 // myio
+      end
+
+      classrelation 225421 // (<dependency>)
+	relation 225165 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 225421 // (<dependency>)
+	  b parent class_ref 129805 // mu
+      end
+
+      classrelation 225549 // (<dependency>)
+	relation 225293 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 225549 // (<dependency>)
+	  b parent class_ref 128397 // mystr
+      end
+
+      simplerelation 156045
+	-_->
+	  on 
+	  package_ref 144525 // qt4
+      end
+    end
+
+    classdiagram 167309 "settings_view"
+      draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility yes show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A3-Landscape
     end
 
     class 166541 "Settings"
@@ -956,6 +1411,191 @@ ${inlines}
 	explicit_switch_type ""
 	
       end
+
+      operation 230925 "check_default"
+	class_operation preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 231181 "assign_default"
+	class_operation preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      attribute 172813 "MinMemberWidthValue"
+	class_attribute const_attribute private explicit_type ""
+	init_value "10"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 172941 "SupMemberWidthValue"
+	const_attribute private explicit_type ""
+	init_value "100"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 173069 "UmlDefaultMaxMemberWidth"
+	class_attribute const_attribute private explicit_type ""
+	init_value "0"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 173197 "UmlUnlimitedMemberWidth"
+	class_attribute const_attribute private explicit_type ""
+	init_value "127"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      class 226573 "DrawingSettings"
+	visibility package 
+	cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	classrelation 217741 // (<generalisation>)
+	  relation 217485 ---|> name "<generalisation>"
+	    a public
+	      cpp default "${type}"
+	      classrelation_ref 217741 // (<generalisation>)
+	    b parent class_ref 138381 // QObject
+	end
+      end
+
+      class 226701 "SimpleClassDiagramSettings"
+	visibility package 
+	cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+      end
+
+      class 226829 "ComponentDrawingSettings"
+	visibility package 
+	cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+      end
+
+      class 226957 "StateDrawingSettings"
+	visibility package 
+	cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+      end
+
+      class 227085 "ActivityDrawingSettings"
+	visibility package 
+	cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+      end
+
+      classrelation 224269 // (<dependency>)
+	relation 224013 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 224269 // (<dependency>)
+	  b parent class_ref 166925 // myio
+      end
+
+      classrelation 224397 // (<dependency>)
+	relation 224141 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 224397 // (<dependency>)
+	  b parent class_ref 167309 // translate
+      end
+
+      simplerelation 155661
+	-_->
+	  on 
+	  package_ref 144525 // qt4
+      end
+
+      simplerelation 155789
+	-_->
+	  on 
+	  package_ref 136205 // dialog
+      end
+
+      simplerelation 155917
+	-_->
+	  on 
+	  package_ref 136077 // diagram
+      end
     end
 
     class 166669 "UmlDrag"
@@ -984,6 +1624,11 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
+    end
+
+    classdiagram 154253 "myio_view"
+      draw_all_relations no hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility yes show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position no show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A2-Landscape
     end
 
     class 166925 "myio"
@@ -2376,7 +3021,7 @@ ${members}};
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 203789 // (<dependency>)
-	  b parent class_ref 128909 // UmlGlobal.h
+	  b parent class_ref 128909 // UmlGlobal
       end
 
       classrelation 203917 // (<dependency>)
@@ -2392,7 +3037,7 @@ ${members}};
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 204045 // (<dependency>)
-	  b parent class_ref 129805 // mu.h
+	  b parent class_ref 129805 // mu
       end
 
       classrelation 204173 // (<dependency>)
@@ -2400,15 +3045,7 @@ ${members}};
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 204173 // (<dependency>)
-	  b parent class_ref 129933 // err.h
-      end
-
-      classrelation 204301 // (<dependency>)
-	relation 204045 -_-> name "<dependency>"
-	  a default
-	    cpp default "#include in source"
-	    classrelation_ref 204301 // (<dependency>)
-	  b parent class_ref 131469 // translate.h
+	  b parent class_ref 129933 // err
       end
 
       classrelation 204429 // (<dependency>)
@@ -2418,6 +3055,11 @@ ${members}};
 	    classrelation_ref 204429 // (<dependency>)
 	  b parent class_ref 167053 // strutil
       end
+    end
+
+    classdiagram 174221 "strutil_view"
+      draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility yes show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A4
     end
 
     class 167053 "strutil"
@@ -2432,6 +3074,288 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
+      operation 241549 "manage_comment"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 241805 "manage_description"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 242061 "manage_python_comment"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 242317 "manage_python_description"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 242573 "manage_python_docstring"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 242829 "capitalize"
+	preserve_cpp_body_indent public return_type class_ref 175629 // QString
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 243085 "true_name"
+	preserve_cpp_body_indent public return_type class_ref 175629 // QString
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 243341 "is_char_of_name"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 243597 "extract_name"
+	preserve_cpp_body_indent public return_type class_ref 175629 // QString
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 243853 "quote"
+	preserve_cpp_body_indent public return_type class_ref 175629 // QString
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 244109 "remove_comments"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 244365 "remove_python_comments"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 244621 "remove_preprocessor"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 244877 "java_multiplicity"
+	preserve_cpp_body_indent public return_type class_ref 175629 // QString
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 245133 "need_equal"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 245389 "bypass_spaces"
+	class_operation preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 245645 "is_referenced"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      classrelation 226061 // (<dependency>)
+	relation 225805 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 226061 // (<dependency>)
+	  b parent class_ref 128397 // mystr
+      end
+
+      simplerelation 156301
+	-_->
+	  on 
+	  package_ref 144525 // qt4
+      end
+
+      simplerelation 156429
+	-_->
+	  on 
+	  package_ref 151309 // std
+      end
+
+      classrelation 226189 // (<dependency>)
+	relation 225933 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 226189 // (<dependency>)
+	  b parent class_ref 234893 // codec
+      end
     end
 
     class 167181 "ProfiledStereotypes"
@@ -2460,6 +3384,11 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
+    end
+
+    classdiagram 147725 "UmlEnum_view"
+      draw_all_relations no hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A3-Landscape
     end
 
     class 168973 "UmlEnum"
@@ -3297,19 +4226,193 @@ ${items}};
       end
     end
 
-    classdiagram 147725 "UmlEnum_view"
-      draw_all_relations no hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    classdiagram 174349 "codec_view"
+      draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility yes show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
       size A3-Landscape
     end
 
-    classdiagram 154253 "myio_view"
-      draw_all_relations no hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility yes show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position no show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-      size A2-Landscape
+    class 234893 "codec"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      simplerelation 156557
+	-_->
+	  on 
+	  package_ref 144525 // qt4
+      end
+
+      classrelation 226317 // (<dependency>)
+	relation 226061 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 226317 // (<dependency>)
+	  b parent class_ref 128397 // mystr
+      end
+
+      classrelation 226445 // (<dependency>)
+	relation 226189 -_-> name "<dependency>"
+	  a default
+	    cpp default "#include in source"
+	    classrelation_ref 226445 // (<dependency>)
+	  b parent class_ref 167053 // strutil
+      end
+
+      classrelation 232973 // Codec (<unidirectional association>)
+	relation 232717 ---> name "<unidirectional association>"
+	  a role_name "Codec" class_relation private
+	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 232973 // Codec (<unidirectional association>)
+	  b parent class_ref 131597 // QTextCodec
+      end
+
+      operation 252173 "codec"
+	preserve_cpp_body_indent public return_type class_ref 175629 // QString
+	nparams 0
+	
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 252429 "set_codec"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 252685 "toUnicode"
+	preserve_cpp_body_indent public return_type class_ref 175629 // QString
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 252941 "fromUnicode"
+	preserve_cpp_body_indent public explicit_return_type "WrapperStr"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 253197 "hasCodec"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 253453 "latinize"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 253709 "remove_crlf"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 253965 "toLocale"
+	preserve_cpp_body_indent cpp_inline public return_type class_ref 175629 // QString
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
+
+      operation 254221 "toLocaleFull"
+	preserve_cpp_body_indent cpp_inline public return_type class_ref 175629 // QString
+	nparams 0
+	
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	preserve_java_body_indent 
+	preserve_php_body_indent 
+	preserve_python_body_indent 
+	
+      end
     end
 
-    classdiagram 160781 "mystr"
-      draw_all_relations no hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility yes show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position no show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-      size A4
+    classdiagram 180877 "misc_view"
+      draw_all_relations yes hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility yes show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      size A3-Landscape
     end
   end
 end

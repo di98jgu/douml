@@ -36,15 +36,11 @@ classcanvas 129421 class_ref 145677 // ApiCmd.h
   draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyzwh 734.3 1035 2010 140 39
 end
-classcanvas 129549 class_ref 145805 // GenerationSettings.h
-  draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
-  xyzwh 1248.8 776.4 2015 254 39
-end
-classcanvas 129677 class_ref 145933 // TraceDialog.h
+classcanvas 129677 class_ref 145933 // TraceDialog
   draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyzwh 1311.2 439.6 2000 180 40
 end
-classcanvas 129805 class_ref 129677 // DialogUtil.h
+classcanvas 129805 class_ref 129677 // DialogUtil
   draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyzwh 1307.9 497.3 2000 179 40
 end
@@ -52,11 +48,11 @@ classcanvas 129933 class_ref 146061 // AType.h
   draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyzwh 370.9 1034.9 2000 119 39
 end
-classcanvas 130061 class_ref 128525 // UmlWindow.h
+classcanvas 130061 class_ref 128525 // UmlWindow
   draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyzwh 1302.9 967 2010 185 39
 end
-classcanvas 130189 class_ref 129293 // BrowserView.h
+classcanvas 130189 class_ref 129293 // BrowserView
   draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyzwh 1302.6 1025 2006 188 39
 end
@@ -76,15 +72,15 @@ classcanvas 130701 class_ref 146445 // BrowserOperation.h
   draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyzwh 1262.9 261.2 2010 244 40
 end
-classcanvas 130829 class_ref 129933 // err.h
+classcanvas 130829 class_ref 129933 // err
   draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyzwh 1337.6 728.8 2000 105 40
 end
-classcanvas 130957 class_ref 129805 // mu.h
+classcanvas 130957 class_ref 129805 // mu
   draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyzwh 1335.6 678.5 2000 99 40
 end
-classcanvas 131085 class_ref 130317 // QsLog.h
+classcanvas 131085 class_ref 130317 // QsLog
   draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
   xyzwh 1030.2 1034.7 2000 124 39
 end
@@ -136,7 +132,7 @@ packagecanvas 132749
   package_ref 137357 // Logging
     xyzwh 985 981 0 204 100
 end
-note 143885 "\"\\\"SIGNALS\""
+note 143885 "\"\\\"\\\\\\\"\\\\\\\\\\\\\\\"SIGNALS\\\\\\\"\\\"\""
   xyzwh 843.7 31.6 0 264 214
 classcanvas 144013 class_ref 153101 // QList
   draw_all_relations default hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
@@ -217,13 +213,6 @@ relationcanvas 137229 relation_ref 159117 // <dependency>
   from ref 128141 z 2011 to point 1248 979
   line 142477 z 2011 to point 1248 981
   line 142349 z 2011 to ref 130061
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
-end
-relationcanvas 137357 relation_ref 159245 // <dependency>
-  from ref 128141 z 2016 to point 1181 692
-  line 142093 z 2016 to point 1181 796
-  line 141453 z 2016 to ref 129549
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end

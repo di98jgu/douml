@@ -1,6 +1,6 @@
 format 75
 "dialog" // douml::src::dialog
-  revision 5
+  revision 6
   modified_by 13 "work"
   // class settings
   //class diagram settings
@@ -183,6 +183,34 @@ ${inlines}
     end
 
     class 166157 "ReferenceDialog"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 226189 "ClassSettingsDialog"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 226317 "StateSpec"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};

@@ -39,6 +39,7 @@ Objective
  
 #### The quest ####
  * What does what, most of the classes lack documentation.
+ * Assert the code, at very least track the use of *new* and *delete*.
  * Document code and maybe do some cleaning.
  * To learn all about QT or at least learn how to use it. Obviously very 
    useful.
@@ -101,9 +102,15 @@ Project status
  classes that is used everywhere and thus is vital to understand.
  - (2014-05-11) Two new diagrams have been added, _mystr_ and _myio_. 
  More *new* statements is found in _Settings_. 
+ - (2014-05-19) More diagrams have been added. The diagram _misc_depend_ 
+ provide an overview of the most important classes and their dependencies.
+ Classes is really just files. They contain various classes, global 
+ functions, structs and enumerations. No namespace is used, everything is
+ in global space. Most of the content in the package _misc_ has been 
+ mapped. Lite new is to be learned right now. The package _dialog_ and 
+ _diagram_ is of greater interest.
  
  
-
 Contact
 -------
 

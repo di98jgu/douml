@@ -1,6 +1,6 @@
 format 75
 "src" // douml::src
-  revision 7
+  revision 8
   modified_by 13 "work"
   // class settings
   //class diagram settings
@@ -64,7 +64,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 128013 // (<dependency>)
-	  b parent class_ref 131341 // TypeIdentifier.h
+	  b parent class_ref 131341 // TypeIdentifier
       end
 
       classrelation 128141 // (<dependency>)
@@ -72,7 +72,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 128141 // (<dependency>)
-	  b parent class_ref 128397 // mystr.h
+	  b parent class_ref 128397 // mystr
       end
 
       classrelation 128269 // (<dependency>)
@@ -88,7 +88,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 128397 // (<dependency>)
-	  b parent class_ref 130829 // ClassDialog.h
+	  b parent class_ref 130829 // ClassDialog
       end
 
       classrelation 128525 // (<dependency>)
@@ -96,7 +96,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 128525 // (<dependency>)
-	  b parent class_ref 130957 // ArtifactDialog.h
+	  b parent class_ref 130957 // ArtifactDialog
       end
 
       classrelation 128653 // (<dependency>)
@@ -104,7 +104,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 128653 // (<dependency>)
-	  b parent class_ref 131085 // OperationDialog.h
+	  b parent class_ref 131085 // OperationDialog
       end
 
       classrelation 128781 // (<dependency>)
@@ -128,7 +128,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 129165 // (<dependency>)
-	  b parent class_ref 130317 // QsLog.h
+	  b parent class_ref 130317 // QsLog
       end
 
       classrelation 129421 // (<dependency>)
@@ -144,7 +144,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 135949 // (<dependency>)
-	  b parent class_ref 129933 // err.h
+	  b parent class_ref 129933 // err
       end
 
       classrelation 136077 // (<dependency>)
@@ -152,7 +152,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 136077 // (<dependency>)
-	  b parent class_ref 129805 // mu.h
+	  b parent class_ref 129805 // mu
       end
 
       classrelation 136205 // (<dependency>)
@@ -160,7 +160,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 136205 // (<dependency>)
-	  b parent class_ref 129549 // Shortcut.h
+	  b parent class_ref 129549 // Shortcut
       end
 
       classrelation 136333 // (<dependency>)
@@ -168,15 +168,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 136333 // (<dependency>)
-	  b parent class_ref 128909 // UmlGlobal.h
-      end
-
-      classrelation 136461 // (<dependency>)
-	relation 136461 -_-> name "<dependency>"
-	  a default
-	    cpp default "#include in source"
-	    classrelation_ref 136461 // (<dependency>)
-	  b parent class_ref 131469 // translate.h
+	  b parent class_ref 128909 // UmlGlobal
       end
 
       classrelation 136589 // (<dependency>)
@@ -192,7 +184,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 143117 // (<dependency>)
-	  b parent class_ref 129677 // DialogUtil.h
+	  b parent class_ref 129677 // DialogUtil
       end
 
       classrelation 143245 // (<dependency>)
@@ -200,7 +192,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 143245 // (<dependency>)
-	  b parent class_ref 130061 // EnvDialog.h
+	  b parent class_ref 130061 // EnvDialog
       end
 
       classrelation 143501 // (<dependency>)
@@ -208,7 +200,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 143501 // (<dependency>)
-	  b parent class_ref 129037 // UmlDesktop.h
+	  b parent class_ref 129037 // UmlDesktop
       end
 
       classrelation 143629 // (<dependency>)
@@ -216,7 +208,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 143629 // (<dependency>)
-	  b parent class_ref 128525 // UmlWindow.h
+	  b parent class_ref 128525 // UmlWindow
       end
 
       classrelation 143757 // (<dependency>)
@@ -256,7 +248,7 @@ ${inlines}
 	  a default
 	    cpp default "#include in source"
 	    classrelation_ref 144269 // (<dependency>)
-	  b parent class_ref 130189 // QsLogDest.h
+	  b parent class_ref 130189 // QsLogDest
       end
 
       classrelation 144397 // (<dependency>)

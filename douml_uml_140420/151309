@@ -1,6 +1,6 @@
 format 75
 "std" // std
-  revision 2
+  revision 3
   modified_by 13 "work"
   // class settings
   //class diagram settings
@@ -57,6 +57,20 @@ ${inlines}
     end
 
     class 212749 "stdio"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 234765 "stdlib"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};

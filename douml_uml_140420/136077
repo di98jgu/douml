@@ -1,6 +1,6 @@
 format 75
 "diagram" // douml::src::diagram
-  revision 5
+  revision 7
   modified_by 13 "work"
   // class settings
   //class diagram settings
@@ -71,6 +71,20 @@ ${inlines}
     end
 
     class 128525 "UmlWindow"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 226445 "UmlCanvas"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
