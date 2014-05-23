@@ -115,7 +115,7 @@ Contact
 -------
 
 You may contact me at   
-di98jgu at gmail dot com
+di98jgu at gmail dot cc
 
 	
 Official home of DoUML
